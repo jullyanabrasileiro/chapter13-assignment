@@ -1,8 +1,8 @@
-// Do it yourself 1
-// Create a server that responds to 127.0.0.1:3000 with your first name
-// and last name
+// Build a server on port 3000 that responds to the user in the following
+// way:
+// 1. For the url ‘/firstname’ - return “Miki”
+// const http = require('http');
 
-const http = require('http');
 
 const server_myName = function(req, res) {
     res.write('Jullyana Brasileiro');
