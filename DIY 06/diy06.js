@@ -1,6 +1,5 @@
 // Write a program that reads asynchronous from a file called test.txt and prints the text to the console
 
-const fs = require('fs');
 const fsp = require('fs/promises');
 
 async function readFileAsync() {
