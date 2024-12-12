@@ -7,7 +7,7 @@ function writeNameSync() {
         fs.writeFileSync('test.txt', 'Jullyana Brasileiro');
         console.log('File written successfully with Sync function');
     } catch (err) {
-        console.error('An error occurred')
+        console.error('An error occurred while writing the file.', err);
     }
 }
 
