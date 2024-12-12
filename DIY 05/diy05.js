@@ -4,11 +4,14 @@ const fs = require('fs');
 
 const filePath = './nodeandnodemon.txt';
 
-fs.readFile('nodeandnodemon.txt', 'utf8', (err, data) => {
-    if (err) {
-        console.error('Error reading file:', err);
-        return;
+function readFileSync() {
+    try {
+        const data = fs.readFileSync('./nodeandnodemon.txt', 'utf8');
+        console.log(data);
+
+    } catch (err) {
+        console.error('An error ocurred', err);
     }
-    console.log('Content of the file:');
-    console.log(data);
-})
+}
+
+readFileSync();
